@@ -1,38 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #cfc9cb;
+}
 .App {
+}
+.signup {
+  background: #5bc0be;
+  padding: 1rem;
+  margin: 0 auto;
+  width: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 0.5rem;
+}
+
+.signup header {
+  text-align: center;
+  background: #5bc0be;
+}
+
+a {
+  text-decoration: none;
+  margin: 0.2rem;
+  text-align: center;
+  padding: 0.1rem;
+  border-bottom: 1px solid #1c2541;
+
+  cursor: pointer;
+  color: #ffffff;
+  border-radius: 0.2rem;
+  background: linear-gradient(145deg, #3a506b, #5bc0be) !important;
+  padding-bottom: 0.1rem;
+  box-shadow: 0px 2px 3px #3a506b;
+  transition: 0.3s all;
+}
+a:hover {
+  box-shadow: 0px 1px 2px #fff;
+}
+.title,
+.small {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title {
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+}
+.small {
+  margin-bottom: 1rem;
+  display: block;
+}
+.icons {
+  background: #3a506b;
+  /* padding: 1rem; */
+  /* margin: 1rem; */
+}
+.icon svg {
+  margin-right: 5rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.divider {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #ffffff;
+  line-height: 0.1em;
+
+  margin: 1rem 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.dividerText {
+  background: #5bc0be;
+  padding: 0 10px;
+  border-radius: 1rem;
+}
+
+.icon {
+  background: #ffffff;
+  margin: 0.3rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+/* max-width: 568px */
+/* width: 100% !important; */
+
+/* Form */
+.signupForm {
+  /* background: #55b9f3; */
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border-radius: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+.signupForm input {
+  /* margin: 1rem; */
+  /* padding: 1rem 0; */
+  /* height: 10px; */
+  outline: none;
+  border: none;
+
+  width: '100%';
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.signupForm input::placeholder {
+  text-transform: capitalize;
+}
+
+.btn {
+  cursor: pointer !important;
+  margin: 2rem auto !important;
+  border-radius: 50px !important;
+  background: linear-gradient(145deg, #3a506b, #5bc0be) !important;
+
+  width: 50% !important;
+  border: 1px solid #5bc0be !important;
+  outline: none !important;
+  font-size: 1rem !important;
+  padding: 2px !important;
+  color: #ffffff !important;
+  text-transform: capitalize !important;
+  letter-spacing: 1px !important;
+  transition: all 0.3s !important;
+  align-items: center !important;
+}
+
+.btn:hover {
+  transform: scale(1.04);
+}
+
+.input {
+  margin-top: 21px;
+  margin-bottom: 3rem;
+}
+
+.testing {
+  color: red !important;
 }
